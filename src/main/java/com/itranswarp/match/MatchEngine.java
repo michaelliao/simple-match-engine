@@ -37,7 +37,7 @@ public class MatchEngine {
                 // 买入订单价格比卖盘第一档价格低:
                 break;
             } else if (takerOrder.direction == Direction.SELL && takerOrder.price.compareTo(makerOrder.price) > 0) {
-                // 卖出订单价格比卖盘第一档价格高:
+                // 卖出订单价格比买盘第一档价格高:
                 break;
             }
             // 以Maker价格成交:
